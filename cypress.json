@@ -1,0 +1,18 @@
+{
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "projectId": "fast800-e2e",
+  "supportFile": "cypress/support/index.ts",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "testFiles": "**/*.{feature,features}",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 10000,
+  "env": {
+    "fast800_auth0_client_id": "",
+    "fast800_auth0_client_secret": ""
+  }
+}

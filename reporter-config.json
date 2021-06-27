@@ -1,0 +1,7 @@
+{
+  "reporterEnabled": "spec, mocha-junit-reporter",
+  "mochaJunitReporterReporterOptions": {
+    "testsuitesTitle": true,
+    "mochaFile": "test_results/mocha/results-[hash].xml"
+  }
+}

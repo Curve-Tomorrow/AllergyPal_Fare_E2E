@@ -1,0 +1,35 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.bak
+*.log
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+npm-debug.log*
+typings/
+
+.idea
+.eslintcache
+.npmrc
+yarn.lock
+
+coverage
+node_modules
+tmp/
+temp/
+$RECYCLE.BIN/
+
+# test results
+cypress/videos
+cypress/screenshots
+cypress/results
+
+# local env
+cypress.env.json
+
+.DS_Store
+Thumbs.db

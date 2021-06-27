@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "cucumberautocomplete.steps": ["cypress/support/step_definitions/*.ts"],
+  "cucumberautocomplete.syncfeatures": "cypress/integration/**/*.feature",
+  "cucumberautocomplete.smartSnippets": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
