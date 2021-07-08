@@ -1,4 +1,4 @@
-import {ADMIN_BASE_URL, BASE_URL, WAIT_TIMEOUT} from './constant';
+import {FARE_BASE_URL, BASE_URL, WAIT_TIMEOUT} from './constant';
 
 type INPUT = 'input' | 'textarea';
 export type TAB = 'Home' | 'Track' | 'Explore' | 'Community' | 'Shopping' | 'Profile';
@@ -87,12 +87,12 @@ export default class BasePage {
     return cy.get(selector);
   }
 
-  goToAdminUrl(path: string) {
-    cy.visit(ADMIN_BASE_URL + path);
+  goToFareUrl(path: string) {
+    cy.visit(FARE_BASE_URL + path);
   }
 
-  // goToAdminUrl() {
-  //   cy.visit(ADMIN_BASE_URL, {headers: {
+  // goToFareUrl() {
+  //   cy.visit(FARE_BASE_URL, {headers: {
   //     'x-requested-with': "https://allergy-pal-ionic-git-fare-development-curvetomorrow.vercel.app"
   //     }});
   // }

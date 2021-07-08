@@ -1,4 +1,4 @@
-Feature: Admin side portal
+Feature: Registration
 
 
 #  Background: App data has been reset

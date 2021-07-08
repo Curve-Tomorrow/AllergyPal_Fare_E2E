@@ -7,6 +7,29 @@ import {MealPlanModel} from '../pages/admin_portal/admin.edit.meal.plan.page';
 import {ExerciseModel} from '../pages/admin_portal/admin.exercise.page';
 import {WorkoutModel} from '../pages/admin_portal/admin.workout.page';
 import {FitnessLevelModel} from '../pages/admin_portal/admin.fitness_levels.page';
+import {FareRegisterModel} from '../pages/fare.register.page';
+import {FareLoginModel} from '../pages/fare.login.page';
+
+// Fare Registration
+
+export const registration1: FareRegisterModel = {
+  firstName: 'SampleFirstName',
+  lastName: 'SampleLastName',
+  email: 'mail2asis+15@gmail.com',
+  phoneNumber: 1234567890,
+  zipCode: 12345,
+  password: "Abcd@1234",
+  confirm_password: "Abcd@1234"
+};
+
+
+// Fare Login
+
+export const login1: FareLoginModel = {
+  email: 'mail2asis+15@gmail.com',
+  password: "Abcd@1234",
+};
+
 
 //Recipes
 

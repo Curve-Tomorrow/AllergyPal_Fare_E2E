@@ -1,7 +1,7 @@
 import BasePage from '../../utils/base.page';
 const EMAIL_SELECTOR = '#user_email';
 const PASSWORD_SELECTOR = '#user_password';
-const LOGIN_BTN_SELECTOR = '.btn';
+const LOGIN_BTN_SELECTOR = '#signUpButton';
 
 export class AdminLoginPage extends BasePage {
   constructor() {
@@ -15,6 +15,6 @@ export class AdminLoginPage extends BasePage {
   }
 
   visit() {
-    this.goToAdminUrl('/login');
+    this.goToFareUrl('/welcome');
   }
 }
