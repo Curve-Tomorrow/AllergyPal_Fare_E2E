@@ -10,7 +10,8 @@
     "cy:run": "cypress run",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --cache",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --cache --fix",
-    "test": "npm run cy:run"
+    "test": "npm run cy:run",
+    "proxy": "lcp --proxyUrl https://allergy-pal-ionic-git-fare-development-curvetomorrow.vercel.app --proxyPartial / --port 8100"
   },
   "author": "Ahmed Raza <hafizahmedmoon@gmail.com>",
   "license": "ISC",
@@ -48,6 +49,7 @@
   },
   "dependencies": {
     "cypress-file-upload": "^5.0.2",
+    "local-cors-proxy": "^1.1.0",
     "localforage": "git+https://github.com/localForage/localForage.git"
   }
 }

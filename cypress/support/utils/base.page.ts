@@ -91,6 +91,11 @@ export default class BasePage {
     cy.visit(ADMIN_BASE_URL + path);
   }
 
+  // goToAdminUrl() {
+  //   cy.visit(ADMIN_BASE_URL, {headers: {
+  //     'x-requested-with': "https://allergy-pal-ionic-git-fare-development-curvetomorrow.vercel.app"
+  //     }});
+  // }
   clickBtnWithText(text: string) {
     cy.get('button, ion-button').contains(text).click();
   }

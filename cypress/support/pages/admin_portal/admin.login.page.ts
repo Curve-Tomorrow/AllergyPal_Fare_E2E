@@ -15,6 +15,6 @@ export class AdminLoginPage extends BasePage {
   }
 
   visit() {
-    this.goToAdminUrl('users/sign_in');
+    this.goToAdminUrl('/login');
   }
 }

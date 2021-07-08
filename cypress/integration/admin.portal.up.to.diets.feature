@@ -1,14 +1,14 @@
 Feature: Admin side portal
 
 
-  Background: App data has been reset
-
-    Given I go to admin login page
-    When I login as admin with valid credential
+#  Background: App data has been reset
+#
+#    Given I go to admin login page
+#    When I login as admin with valid credential
 
   Scenario: Clear previous data from the Admin portal
 
-    And I delete all the previous data
+    Given I go to admin login page
 
     # Locations
 
