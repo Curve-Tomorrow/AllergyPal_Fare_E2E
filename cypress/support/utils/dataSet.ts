@@ -9,13 +9,14 @@ import {WorkoutModel} from '../pages/admin_portal/admin.workout.page';
 import {FitnessLevelModel} from '../pages/admin_portal/admin.fitness_levels.page';
 import {FareRegisterModel} from '../pages/fare.register.page';
 import {FareLoginModel} from '../pages/fare.login.page';
+import {FareAddChildModel} from '../pages/fare.add.child.page';
 
 // Fare Registration
 
 export const registration1: FareRegisterModel = {
   firstName: 'SampleFirstName',
   lastName: 'SampleLastName',
-  email: 'mail2asis+15@gmail.com',
+  email: 'mail2asis+1@gmail.com',
   phoneNumber: 1234567890,
   zipCode: 12345,
   password: "Abcd@1234",
@@ -26,9 +27,34 @@ export const registration1: FareRegisterModel = {
 // Fare Login
 
 export const login1: FareLoginModel = {
-  email: 'mail2asis+15@gmail.com',
+  email: 'mail2asis+1@gmail.com',
   password: "Abcd@1234",
 };
+
+// Add Child
+
+export const addChild1: FareAddChildModel = {
+  firstName: 'SampleFirstName',
+  lastName: 'SampleLastName',
+  dob: '2021-09-21',
+  zipCode: 12345,
+  emergencyContactName: 'Emergency Contact Name',
+  emergencyContactNumber: 1234567890,
+  selectAllergens: [1,3,6,8,9],
+  medicalPractitionerName: 'Medical Practitioner'
+};
+
+export const addChild2: FareAddChildModel = {
+  firstName: 'Child 2 ',
+  lastName: 'LastName',
+  dob: '2009-05-22',
+  zipCode: 12345,
+  emergencyContactName: 'Emergency Contact Name',
+  emergencyContactNumber: 1234567890,
+  selectAllergens: [1,2,5,9,7,3],
+  medicalPractitionerName: 'Medical Practitioner'
+};
+
 
 
 //Recipes

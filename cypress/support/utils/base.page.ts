@@ -50,6 +50,10 @@ export default class BasePage {
     cy.get(ION_PICKER_BTN_SELECTOR).contains('Done').click();
   }
 
+  selectDate(selector:string,date:string){
+    cy.get(selector).invoke('attr', 'value', date);
+  }
+
   check(formControlName: string, option: any) {
     cy.get(`ion-radio-group[formcontrolname='${formControlName}']`).within((elm) => {
       cy.wrap(elm).get(`ion-radio[ng-reflect-value="${option}"]`).click();

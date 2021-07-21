@@ -1,7 +1,7 @@
 Feature: Registration
 
 
-#  Background: App data has been reset
+    Background: App data has been reset
 #
 #    Given I go to admin login page
 #    When I login as admin with valid credential

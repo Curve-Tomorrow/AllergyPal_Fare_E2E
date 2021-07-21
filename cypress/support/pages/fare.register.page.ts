@@ -8,7 +8,7 @@ const CONTINUE_BTN_SELECTOR ='#continueButton';
 
 const PASSWORD_TEXT_BOX_SELECTOR = '#password > .native-input';
 const CONFIRM_PASSWORD_TEXT_BOX_SELECTOR = '#confirmPassword > .native-input';
-const TERMS_AND_CONDITIONS_CHECKBOX_SELECTOR = '.ion-activatable > .ng-untouched';
+const TERMS_AND_CONDITIONS_CHECKBOX_SELECTOR = '.ng-untouched';
 const SIGN_UP_BTN_SELECTOR = '#signUpButton';
 
 export interface FareRegisterModel {
@@ -58,7 +58,7 @@ export class FareRegisterPage extends BasePage {
   }
 
   checkTermsAndConditions(){
-    this.click(TERMS_AND_CONDITIONS_CHECKBOX_SELECTOR);
+    cy.get(TERMS_AND_CONDITIONS_CHECKBOX_SELECTOR).click({ multiple: true })
   }
 
   clickOnSignUPBtn(){
@@ -74,7 +74,7 @@ export class FareRegisterPage extends BasePage {
 
     this.type(PASSWORD_TEXT_BOX_SELECTOR,registration.password);
     this.type(CONFIRM_PASSWORD_TEXT_BOX_SELECTOR,registration.confirm_password);
-    this.click(TERMS_AND_CONDITIONS_CHECKBOX_SELECTOR);
+    cy.get(TERMS_AND_CONDITIONS_CHECKBOX_SELECTOR).last().click();
     this.click(SIGN_UP_BTN_SELECTOR);
   }
 }

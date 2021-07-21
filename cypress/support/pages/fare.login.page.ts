@@ -2,7 +2,7 @@ import BasePage from '../utils/base.page';
 import {FareRegisterModel} from './fare.register.page';
 const EMAIL_TEXT_BOX_SELECTOR = ':nth-child(1) > .item-field > #email > .native-input';
 const PASSWORD_TEXT_BOX_SELECTOR = ':nth-child(2) > .item-field > #password > .native-input';
-const LOGIN_BTN_SELECTOR = 'app-login.ion-page > .bottom-content > ion-row.md > :nth-child(2) > #signUpButton';
+const LOGIN_BTN_SELECTOR = ':nth-child(4) > ion-row.md > :nth-child(2) > #signUpButton';
 
 const HELP_HYPER_LINK_SELECTOR = 'app-login.ion-page > app-app-header > .ion-no-border > .toolbar-title-default > #rightBarButton';
 

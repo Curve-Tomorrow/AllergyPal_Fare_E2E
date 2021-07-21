@@ -1,0 +1,62 @@
+import BasePage from '../utils/base.page';
+
+const HOME_PAGE_LOGO_IMAGE_SELECTOR = '#homeLogo';
+const SAFE_FOODS_BUTTON_SELECTOR = '[ng-reflect-router-link="/tips/food"] > .data-icons';
+const GOING_OUT_BUTTON_SELECTOR = '[ng-reflect-router-link="/tips/going-out"] > .data-icons';
+const SCHOOL_BUTTON_SELECTOR = '[ng-reflect-router-link="/tips/school"] > .data-icons';
+const SHARE_PROFILE_BUTTON_SELECTOR = '.share-profile-button';
+const ADD_CHILD_BUTTON_SELECTOR = '.card-content-md > .ion-color';
+
+const DINEOUT_BUTTON_SELECTOR = '.ap-padding-right-small > .item';
+const GROCERY_SHOP_BUTTON_SELECTOR = ':nth-child(2) > .item';
+
+const LIVING_TEAL_CHANNEL_BUTTON_SELECTOR = '[ng-reflect-router-link="/living-teal"] > .learning-card > .ap-padding-bottom > [size="3"] > a > .ap-margin-top';
+const ALLERGIES_101_BUTTON_SELECTOR = '[ng-reflect-router-link="/allergies"] > .learning-card > .ap-padding-bottom > [size="3"] > a > .ap-margin-top';
+
+export class FareHomePage extends BasePage {
+  constructor() {
+    super();
+  }
+
+  clickOnLogo(){
+    this.click(HOME_PAGE_LOGO_IMAGE_SELECTOR);
+  }
+
+  clickOnSafeFoods(){
+    this.click(SAFE_FOODS_BUTTON_SELECTOR);
+  }
+
+  clickOnGoingOut(){
+    this.click(GOING_OUT_BUTTON_SELECTOR);
+  }
+
+  clickOnSchool(){
+    this.click(SCHOOL_BUTTON_SELECTOR);
+  }
+
+  clickOnShareProfile(){
+    this.click(SHARE_PROFILE_BUTTON_SELECTOR);
+  }
+
+  clickOnDineOut(){
+    this.click(DINEOUT_BUTTON_SELECTOR);
+  }
+
+  clickOnGroceryShop(){
+    this.click(GROCERY_SHOP_BUTTON_SELECTOR);
+  }
+
+  clickOnLivingTealChannel(){
+    this.click(LIVING_TEAL_CHANNEL_BUTTON_SELECTOR);
+  }
+
+  clickOnLAllergies101(){
+    this.click(ALLERGIES_101_BUTTON_SELECTOR);
+  }
+
+  clickOnAddChild(){
+    this.click(ADD_CHILD_BUTTON_SELECTOR);
+  }
+}
+
+
